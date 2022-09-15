@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <title>Odin's Recipe Book</title>
 </head>
 <body>
+<!-- Special THX to @dhanishgajjar from codepen.io for animated book code below -->    
+    <div class="book" onclick="bookclick2('hide')">
+        <div class="back"></div>
+        <div class="page6"></div>
+        <div class="page5"><img class="clicker" src="./images/click.png"></div>
+        <div class="page4"></div>
+        <div class="page3"></div>
+        <div class="page2"></div>
+        <div class="page1"></div>
+        <div class="front">Odin's Recipe Book</div>
+      </div>
+<!-- Special THX to @dhanishgajjar from codepen.io for animated book code above -->    
+
     <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="./recipes/quesadillas.html">Quesadillas</a></li>
-        <li><a href="./recipes/instant-pot-spaghetti.html">Instant Pot Spaghetti and Meat Sauce</a></li>
-        <li><a href="./recipes/southwestern-baked-chicken.html">Southwestern Baked Chicken</a></li>
-    </ul>
+        <div id="hide">
+            <p><a href="./recipes/quesadillas.html" class="link">Quesadillas</a></p>
+            <p><a href="./recipes/instant-pot-spaghetti.html" class="link">Instant Pot Spaghetti and Meat Sauce</a></p>
+            <p><a href="./recipes/southwestern-baked-chicken.html" class="link">Southwestern Baked Chicken</a></p>
+        </div> 
 </body>
 </html>
